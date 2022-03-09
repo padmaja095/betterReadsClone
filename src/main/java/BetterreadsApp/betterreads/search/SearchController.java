@@ -13,7 +13,7 @@ import org.springframework.web.reactive.function.client.ExchangeStrategies;
 import org.springframework.web.reactive.function.client.WebClient;
 
 import reactor.core.publisher.Mono;
-
+//
 @Controller
 public class SearchController {
     private final String COVER_IMAGE_ROOT="http://covers.openlibrary.org/b/id/";
@@ -43,7 +43,7 @@ public class SearchController {
                coverId=COVER_IMAGE_ROOT+coverId+"-M.jpg";
            }
            else{
-               coverId="/images/no-image.png";
+               coverId="/images/no-image1.png";
            }
            bookResult.setCover_i(coverId);
            return bookResult;

@@ -1,7 +1,7 @@
 package BetterreadsApp.betterreads.search;
 
 import java.util.List;
-
+//
 public class SearchResult {
     private int numFound;
      private List<SearchResultBook> docs;

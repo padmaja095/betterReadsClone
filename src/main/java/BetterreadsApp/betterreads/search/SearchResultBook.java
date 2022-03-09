@@ -1,7 +1,7 @@
 package BetterreadsApp.betterreads.search;
 
 import java.util.List;
-
+//
 public class SearchResultBook {
     private String key;
     private String title;

@@ -8,7 +8,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
-
+//
 @Controller
 public class BookController {
     @Autowired
@@ -21,7 +21,7 @@ public class BookController {
           if(optionalBook.isPresent())
           {
               Book book=optionalBook.get();
-              String coverImageUrl="/images/no-image.jpg";
+              String coverImageUrl="/images/no-image1.jpg";
               List<String> coverIds= new ArrayList<>();
               coverIds=book.getCoverIds();
               if( coverIds!=null)

@@ -28,7 +28,7 @@ public class BetterReadsApp {
 		System.out.println(principal);
 		return principal.getAttribute("login");
 	}
-	
+	//
 	@Bean
 	public CqlSessionBuilderCustomizer sessionBuilderCustomizer(DatastaxAstraProperties astraProperties) {
 		Path bundle = astraProperties.getSecureConnectBundle().toPath();

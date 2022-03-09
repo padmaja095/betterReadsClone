@@ -1,6 +1,6 @@
 spring:
   application:
-    name: betterreads
+    name: better_reads
   security:
     oauth2:
       client:
