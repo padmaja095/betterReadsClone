@@ -15,12 +15,14 @@ public class SecurityAdapter extends WebSecurityConfigurerAdapter {
 		// @formatter:off
 		http
 			.authorizeRequests(a -> a
-				.antMatchers("/", "/error").permitAll()
-				.anyRequest().authenticated()
+			     .anyRequest().permitAll()
+				//.antMatchers("/", "/error").permitAll()
+				//.anyRequest().authenticated()
 			)
 			.exceptionHandling(e -> e
 				.authenticationEntryPoint(new HttpStatusEntryPoint(HttpStatus.UNAUTHORIZED))
 			)
+			//.csrf().disable()
 			.csrf(c -> c
 				.csrfTokenRepository(CookieCsrfTokenRepository.withHttpOnlyFalse())
 			)
